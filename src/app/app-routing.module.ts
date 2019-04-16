@@ -8,6 +8,9 @@ import { PoolmanagerComponent } from './Componets/poolmanager/poolmanager.compon
 import { StudentsComponent } from './Componets/students/students.component';
 import { CoachComponent } from './Componets/coach/coach.component';
 import { StudentSignupComponent } from './Componets/student-signup/student-signup.component';
+import { CoachSignupComponent } from './Componets/coach-signup/coach-signup.component';
+import { PoolmanagerSignupComponent } from './Componets/poolmanager-signup/poolmanager-signup.component';
+import { EventsComponent } from './Componets/events/events.component';
 
 
 const routes: Routes = [
@@ -44,10 +47,22 @@ const routes: Routes = [
   component: CoachComponent
 },
 {
-  path: 'studentignup',
+  path: 'studentsignup',
   component: StudentSignupComponent
 },
+{
+  path: 'events',
+  component: EventsComponent
+},
 
+{
+  path: 'coachsignup',
+  component: CoachSignupComponent
+},
+{
+  path: 'poolmanagersignup',
+  component: PoolmanagerSignupComponent
+},
 
 {
   path:'dashboard',

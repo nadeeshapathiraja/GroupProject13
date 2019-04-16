@@ -24,6 +24,9 @@ import { SkillComponent } from './Componets/skill/skill.component';
 import { from } from 'rxjs';
 import { StudentsignupService } from './services/studentsignup.service';
 import { UsersnotvalidComponent } from './usersnotvalid/usersnotvalid.component';
+import { CoachSignupComponent } from './Componets/coach-signup/coach-signup.component';
+import { PoolmanagerSignupComponent } from './Componets/poolmanager-signup/poolmanager-signup.component';
+import { EventsComponent } from './Componets/events/events.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { UsersnotvalidComponent } from './usersnotvalid/usersnotvalid.component'
     SigninComponent,
     SkillComponent,
     UsersnotvalidComponent,
+    CoachSignupComponent,
+    PoolmanagerSignupComponent,
+    EventsComponent,
     
   ],
   imports: [
