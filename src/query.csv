@@ -1,0 +1,28 @@
+CREATE DATABASE swimmingpool;
+
+CREATE TABLE student (
+    userid int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+);
+
+CREATE TABLE student (
+
+    sid int AUTO_INCREMENT,
+    userid int NOT NULL PRIMARY KEY,
+    indexnumber int,
+    fullname varchar(255) NOT NULL,
+    ininame varchar(255) NOT NULL,
+    address varchar(255),
+    dob varchar(255), 
+    gender varchar(255),
+    school varchar(255),
+    grade varchar(255),
+    parentname varchar(255),
+    nic int,
+    mobile int, 
+    fixed int,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL
+
+);
