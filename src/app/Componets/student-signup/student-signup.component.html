@@ -220,8 +220,6 @@
           <li><a href="#band">NEWS</a></li>
           <li><a href="#tour">ABOUT US</a></li>
           <li><a href="#contact">CONTACT</a></li>
-          <li><a href="register">SIGNUP</a></li>
-          <li><a href="signin">SIGNIN</a></li>
         </ul>
 
       </div>
@@ -348,7 +346,7 @@
           placeholder="Enter Your Telephone Number">
 
         <label>Email</label>
-        <input type="email" class="form-control" formControlName="email" id="email" placeholder="Enter Your Email">
+        <input type="email" class="form-control" pattern="[^ @]*@[^ @]*" formControlName="email" id="email" placeholder="Enter Your Email">
 
         <label>Password</label>
         <input type="password" class="form-control" formControlName="password" id="password"
@@ -361,7 +359,7 @@
 
 
         <input class="btn btn-primary" type="submit" value="Submit">
-        <input class="btn btn-danger" type="reset" value="Reset">
+        <input type="reset" class="btn btn-danger"  value="Reset">
       </div>
       <!-- </form>  -->
 

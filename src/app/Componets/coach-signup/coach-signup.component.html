@@ -172,8 +172,6 @@
         <li><a href="#band">NEWS</a></li>
         <li><a href="#tour">ABOUT US</a></li>
         <li><a href="#contact">CONTACT</a></li>
-        <li><a  href="register">SIGNUP</a></li>
-        <li><a href="signin">SIGNIN</a></li>
       </ul> 
       
     </div>
@@ -238,9 +236,9 @@
       <!-- form Div -->
       <div class="form-group">
 
-        <label>ID</label>
-        <input type="text" formControlName="indexNumber" class="form-control" id="indexNumber"
-          placeholder="Enter Your ID">
+        <label>NIC</label>
+        <input type="text" formControlName="nic" class="form-control" id="nic"
+          placeholder="Enter Your NIC Number">
 
         <label>Full Name</label>
         <input type="text" formControlName="fullname" class="form-control" id="fullname"
@@ -258,12 +256,11 @@
         <br />
 
         <label>Gender</label>
-        <label class="btn btn-outline-dark">
+        
           <input type="radio" name="gender" formControlName="gender" id="male" autocomplete="off"> Male
-        </label>
-        <label class="btn btn-outline-dark">
+        
           <input type="radio" name="gender" formControlName="gender" id="female" autocomplete="off"> Female
-        </label>
+        
         <br />
 
         <label>Occupation</label>
@@ -287,6 +284,10 @@
           <label>Password</label>
           <input type="password" class="form-control" formControlName="password" id="password"
             placeholder="Enter Your password">
+            <label>Confirm Password</label>
+        <input type="password" class="form-control" formControlName="confirmpassword" id="confirmpassword"
+          placeholder="Enter Password Again">
+        <br />
         <br/>
 
 
@@ -300,49 +301,10 @@
     </div>
     
     <!-- Container (TOUR Section) -->
-    <div id="tour" class="bg-1">
-      <div class="container">
-        
-        
-        
-        
-      </div>
+    
       
       <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-        
-          <!-- Modal content-->
-          <!-- <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">×</button>
-              <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
-            </div>
-            <div class="modal-body">
-              <form role="form">
-                <div class="form-group">
-                  <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-                  <input type="number" class="form-control" id="psw" placeholder="How many?">
-                </div>
-                <div class="form-group">
-                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-                  <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-                </div>
-                  <button type="submit" class="btn btn-block">Pay 
-                    <span class="glyphicon glyphicon-ok"></span>
-                  </button>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-                <span class="glyphicon glyphicon-remove"></span> Cancel
-              </button>
-              <p>Need <a href="#">help?</a></p>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </div>
+      
     
     <!-- Container (Contact Section) -->
     <div id="contact" class="container">
