@@ -45,3 +45,22 @@ CREATE TABLE poolmanager (
     FOREIGN KEY (userid) REFERENCES users(userid)
 
 );
+
+CREATE TABLE coach (
+
+    userid int NOT NULL ,
+    nic int PRIMARY KEY,
+    fullname varchar(255) NOT NULL,
+    ininame varchar(255) NOT NULL,
+    address varchar(255),
+    dob varchar(255), 
+    gender varchar(255),
+    occupation varchar(255),
+    experience varchar(255),
+    mobile int, 
+    fixed int,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    FOREIGN KEY (userid) REFERENCES users(userid)
+
+);
