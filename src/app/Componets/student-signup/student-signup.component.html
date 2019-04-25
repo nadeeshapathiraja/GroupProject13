@@ -219,6 +219,7 @@
           <li><a href="#">HOME</a></li>
           <li><a href="#band">NEWS</a></li>
           <li><a href="#tour">ABOUT US</a></li>
+          <li><a href="events">EVENTS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
 
@@ -346,7 +347,8 @@
           placeholder="Enter Your Telephone Number">
 
         <label>Email</label>
-        <input type="email" class="form-control" pattern="[^ @]*@[^ @]*" formControlName="email" id="email" placeholder="Enter Your Email">
+        <input type="email" class="form-control" pattern="[^ @]*@[^ @]*" formControlName="email" id="email"
+          placeholder="Enter Your Email">
 
         <label>Password</label>
         <input type="password" class="form-control" formControlName="password" id="password"
@@ -359,7 +361,7 @@
 
 
         <input class="btn btn-primary" type="submit" value="Submit">
-        <input type="reset" class="btn btn-danger"  value="Reset">
+        <input type="reset" class="btn btn-danger" value="Reset">
       </div>
       <!-- </form>  -->
 
@@ -368,7 +370,7 @@
   </div>
 
   <!-- Container (TOUR Section) -->
-  
+
 
   <!-- Container (Contact Section) -->
   <div id="contact" class="container">
@@ -403,47 +405,16 @@
   </div>
 
   <!-- Image of location/map -->
-  <img src="map.jpg" class="img-responsive" style="width:100%">
+
 
   <!-- Footer -->
   <footer class="text-center">
-    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-      <span class="glyphicon glyphicon-chevron-up"></span>
-    </a><br><br>
+
     <p>C .W .W Kannangara Central Collage Mathugama- Swimming Club</p>
 
   </footer>
 
-  <script>
-    $(document).ready(function () {
-      // Initialize Tooltip
-      $('[data-toggle="tooltip"]').tooltip();
 
-      // Add smooth scrolling to all links in navbar + footer link
-      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 900, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    })
-  </script>
 
 </body>
 

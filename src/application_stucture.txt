@@ -1,2 +1,66 @@
 CREATE DATABASE swimmingpool;
 
+CREATE TABLE users (
+    userid int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+
+);
+
+CREATE TABLE student (
+
+    userid int NOT NULL ,
+    indexnumber int PRIMARY KEY,
+    fullname varchar(255) NOT NULL,
+    ininame varchar(255) NOT NULL,
+    address varchar(255),
+    dob varchar(255), 
+    gender varchar(255),
+    school varchar(255),
+    grade varchar(255),
+    parentname varchar(255),
+    nic int,
+    mobile int, 
+    fixed int,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    FOREIGN KEY (userid) REFERENCES users(userid)
+
+);
+
+CREATE TABLE poolmanager (
+
+    userid int NOT NULL ,
+    nic int PRIMARY KEY,
+    fullname varchar(255) NOT NULL,
+    ininame varchar(255) NOT NULL,
+    address varchar(255),
+    dob varchar(255), 
+    gender varchar(255),
+    experience varchar(255),
+    mobile int, 
+    fixed int,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    FOREIGN KEY (userid) REFERENCES users(userid)
+
+);
+
+CREATE TABLE coach (
+
+    userid int NOT NULL ,
+    nic int PRIMARY KEY,
+    fullname varchar(255) NOT NULL,
+    ininame varchar(255) NOT NULL,
+    address varchar(255),
+    dob varchar(255), 
+    gender varchar(255),
+    occupation varchar(255),
+    experience varchar(255),
+    mobile int, 
+    fixed int,
+    email varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    FOREIGN KEY (userid) REFERENCES users(userid)
+
+);
