@@ -12,6 +12,7 @@ import { CoachSignupComponent } from './Componets/coach-signup/coach-signup.comp
 import { PoolmanagerSignupComponent } from './Componets/poolmanager-signup/poolmanager-signup.component';
 import { EventsComponent } from './Componets/events/events.component';
 import { ContactComponent } from './Componets/contact/contact.component';
+import { TestComponent } from './Componets/test/test.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,11 @@ const routes: Routes = [
 {
   path: 'signin',
   component: SigninComponent
+},
+
+{
+  path: 'test',
+  component: TestComponent
 },
 
 {
