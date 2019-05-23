@@ -15,6 +15,8 @@ import { ContactComponent } from './Componets/contact/contact.component';
 import { TestComponent } from './Componets/test/test.component';
 import { StudentcountComponent } from './Componets/studentcount/studentcount.component';
 import { WaterLevelComponent } from './Componets/water-level/water-level.component';
+import { NewsComponent } from './Componets/news/news.component';
+import { AboutusComponent } from './Componets/aboutus/aboutus.component';
 
 
 const routes: Routes = [
@@ -28,6 +30,13 @@ const routes: Routes = [
   path: 'register',
   component: SignupUsersTypeComponent
 },
+{
+  path: 'news',
+  component: NewsComponent
+},
+{
+  path: 'aboutus',
+  component: AboutusComponent,
 {
   path: 'stucount',
   component: StudentcountComponent

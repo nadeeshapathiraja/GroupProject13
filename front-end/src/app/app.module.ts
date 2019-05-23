@@ -32,6 +32,8 @@ import { TestComponent } from './Componets/test/test.component';
 import { WaterLevelComponent } from './Componets/water-level/water-level.component';
 import { StudentcountComponent } from './Componets/studentcount/studentcount.component';
 import { CalenderComponent } from './Componets/calender/calender.component';
+import { NewsComponent } from './Componets/news/news.component';
+import { AboutusComponent } from './Componets/aboutus/aboutus.component';
 
 
 @NgModule({
@@ -56,6 +58,8 @@ import { CalenderComponent } from './Componets/calender/calender.component';
     WaterLevelComponent,
     StudentcountComponent,
     CalenderComponent,
+    NewsComponent,
+    AboutusComponent,
     
   ],
   imports: [
