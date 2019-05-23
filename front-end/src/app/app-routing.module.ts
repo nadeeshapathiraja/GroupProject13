@@ -13,6 +13,8 @@ import { PoolmanagerSignupComponent } from './Componets/poolmanager-signup/poolm
 import { EventsComponent } from './Componets/events/events.component';
 import { ContactComponent } from './Componets/contact/contact.component';
 import { TestComponent } from './Componets/test/test.component';
+import { StudentcountComponent } from './Componets/studentcount/studentcount.component';
+import { WaterLevelComponent } from './Componets/water-level/water-level.component';
 
 
 const routes: Routes = [
@@ -25,6 +27,14 @@ const routes: Routes = [
 {
   path: 'register',
   component: SignupUsersTypeComponent
+},
+{
+  path: 'stucount',
+  component: StudentcountComponent
+},
+{
+  path: 'waterLevel',
+  component: WaterLevelComponent
 },
 
 {

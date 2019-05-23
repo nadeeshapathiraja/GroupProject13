@@ -29,6 +29,9 @@ import { PoolmanagerSignupComponent } from './Componets/poolmanager-signup/poolm
 import { EventsComponent } from './Componets/events/events.component';
 import { ContactComponent } from './Componets/contact/contact.component';
 import { TestComponent } from './Componets/test/test.component';
+import { WaterLevelComponent } from './Componets/water-level/water-level.component';
+import { StudentcountComponent } from './Componets/studentcount/studentcount.component';
+import { CalenderComponent } from './Componets/calender/calender.component';
 
 
 @NgModule({
@@ -50,6 +53,9 @@ import { TestComponent } from './Componets/test/test.component';
     EventsComponent,
     ContactComponent,
     TestComponent,
+    WaterLevelComponent,
+    StudentcountComponent,
+    CalenderComponent,
     
   ],
   imports: [
